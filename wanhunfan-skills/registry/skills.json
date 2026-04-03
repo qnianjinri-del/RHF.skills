@@ -1,0 +1,221 @@
+{
+  "project": "wanhunfan-skills",
+  "version": "0.2.0",
+  "entries": [
+    {
+      "id": "therealxiaomanchu_ex_skill",
+      "title": "前任.skill",
+      "repo_full_name": "therealXiaomanChu/ex-skill",
+      "repo_url": "https://github.com/therealXiaomanChu/ex-skill",
+      "theme": "relationship",
+      "object_type": "ex",
+      "entry_file": "SKILL.md",
+      "commands": [
+        "/create-ex",
+        "/list-exes",
+        "/update-ex {slug}"
+      ],
+      "runtime_targets": [
+        "Claude Code",
+        "AgentSkills",
+        "OpenClaw-compatible pattern"
+      ],
+      "generated_output_dir": "exes/{slug}/",
+      "license_signal": "MIT badge in README; LICENSE file present",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": [
+        "双层结构：Relationship Memory + Persona",
+        "支持微信/QQ/社交媒体/照片/口述等输入",
+        "适合作为亲密关系类 skill 的代表条目"
+      ],
+      "evidence": [
+        "https://github.com/therealXiaomanChu/ex-skill/blob/54d0dceab6eeab55c68267aa4b9e0c68bd9e10a6/README.md",
+        "https://github.com/therealXiaomanChu/ex-skill/blob/54d0dceab6eeab55c68267aa4b9e0c68bd9e10a6/SKILL.md"
+      ]
+    },
+    {
+      "id": "perkfly_ex_skill",
+      "title": "前任.skill",
+      "repo_full_name": "perkfly/ex-skill",
+      "repo_url": "https://github.com/perkfly/ex-skill",
+      "theme": "relationship",
+      "object_type": "ex",
+      "entry_file": "SKILL.md",
+      "commands": [
+        "/create-ex",
+        "/list-exes",
+        "/update-ex {slug}"
+      ],
+      "runtime_targets": [
+        "Claude Code",
+        "AgentSkills",
+        "OpenClaw"
+      ],
+      "generated_output_dir": "exes/{slug}/",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": [
+        "和另一份 ex-skill 高度同主题同骨架",
+        "强调 WeChat/iMessage/SMS/photos/social media 输入",
+        "适合在后续 similarity audit 中重点比对"
+      ],
+      "evidence": [
+        "https://github.com/perkfly/ex-skill/blob/c5ece53ab66948c6ea53e0df51c60a6ca0e96ea8/README.md",
+        "https://github.com/perkfly/ex-skill/blob/c5ece53ab66948c6ea53e0df51c60a6ca0e96ea8/SKILL.md"
+      ]
+    },
+    {
+      "id": "notdog1998_yourself_skill",
+      "title": "自己.skill",
+      "repo_full_name": "notdog1998/yourself-skill",
+      "repo_url": "https://github.com/notdog1998/yourself-skill",
+      "theme": "self",
+      "object_type": "self",
+      "entry_file": "SKILL.md",
+      "commands": [
+        "/create-yourself",
+        "/list-selves",
+        "/update-yourself {slug}"
+      ],
+      "runtime_targets": [
+        "Claude Code",
+        "AgentSkills",
+        "OpenClaw-compatible pattern"
+      ],
+      "generated_output_dir": ".claude/skills/{slug}/",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": [
+        "双层结构：Self Memory + Persona",
+        "对象域从他人切换成自我镜像",
+        "路径设计更偏直接让 Claude Code 识别的本地安装模式"
+      ],
+      "evidence": [
+        "https://github.com/notdog1998/yourself-skill/blob/9deb1a87b1231fec85cadf2ef690fa49fef519ca/README.md",
+        "https://github.com/notdog1998/yourself-skill/blob/9deb1a87b1231fec85cadf2ef690fa49fef519ca/SKILL.md"
+      ]
+    },
+    {
+      "id": "titanwings_colleague_skill",
+      "title": "同事.skill",
+      "repo_full_name": "titanwings/colleague-skill",
+      "repo_url": "https://github.com/titanwings/colleague-skill",
+      "theme": "workplace",
+      "object_type": "colleague",
+      "entry_file": "SKILL.md",
+      "commands": [
+        "/create-colleague",
+        "/list-colleagues",
+        "/colleague-rollback {slug} {version}"
+      ],
+      "runtime_targets": [
+        "Claude Code",
+        "AgentSkills",
+        "OpenClaw"
+      ],
+      "generated_output_dir": "colleagues/{slug}/",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": [
+        "Work Skill + Persona 双层架构",
+        "对象域为职场同事/搭档/导师离场后的经验萃取",
+        "可视作这一类仓库的重要源头之一"
+      ],
+      "evidence": [
+        "https://github.com/titanwings/colleague-skill/blob/03f5da54390af25c2ef87ef9fd79a1621691f0c6/README.md"
+      ]
+    },
+    {
+      "id": "leoyeai_teammate_skill",
+      "title": "teammate-skill",
+      "repo_full_name": "LeoYeAI/teammate-skill",
+      "repo_url": "https://github.com/LeoYeAI/teammate-skill",
+      "theme": "workplace",
+      "object_type": "teammate",
+      "entry_file": "unknown",
+      "commands": [],
+      "runtime_targets": [],
+      "generated_output_dir": "unknown",
+      "license_signal": "unknown",
+      "inspection_status": "candidate_unverified",
+      "integration_strategy": "reference_only",
+      "notes": [
+        "名称命中，但未拿到足够文件证据",
+        "保留为候选，不放入首批已核验清单"
+      ],
+      "evidence": [
+        "https://github.com/LeoYeAI/teammate-skill"
+      ]
+    },
+    {
+      "id": "echovic_boss_skill",
+      "title": "boss-skill",
+      "repo_full_name": "echoVic/boss-skill",
+      "repo_url": "https://github.com/echoVic/boss-skill",
+      "theme": "workplace",
+      "object_type": "boss",
+      "entry_file": "unknown",
+      "commands": [],
+      "runtime_targets": [],
+      "generated_output_dir": "unknown",
+      "license_signal": "unknown",
+      "inspection_status": "candidate_unverified",
+      "integration_strategy": "reference_only",
+      "notes": [
+        "名称命中，但未拿到足够文件证据",
+        "保留为候选，不放入首批已核验清单"
+      ],
+      "evidence": [
+        "https://github.com/echoVic/boss-skill"
+      ]
+    },
+    {
+      "id": "nicepkg_boss_skill",
+      "title": "boss-skill",
+      "repo_full_name": "nicepkg/boss-skill",
+      "repo_url": "https://github.com/nicepkg/boss-skill",
+      "theme": "workplace",
+      "object_type": "boss",
+      "entry_file": "unknown",
+      "commands": [],
+      "runtime_targets": [],
+      "generated_output_dir": "unknown",
+      "license_signal": "README_EN 命中，但未完成结构核验",
+      "inspection_status": "candidate_unverified",
+      "integration_strategy": "reference_only",
+      "notes": [
+        "至少存在 README_EN 线索，但未完成人工核验",
+        "保留为候选，不放入首批已核验清单"
+      ],
+      "evidence": [
+        "https://github.com/nicepkg/boss-skill"
+      ]
+    },
+    {
+      "id": "yian0625_girlfriend_skill",
+      "title": "girlfriend-skill",
+      "repo_full_name": "yian0625/girlfriend-skill",
+      "repo_url": "https://github.com/yian0625/girlfriend-skill",
+      "theme": "relationship",
+      "object_type": "girlfriend",
+      "entry_file": "unknown",
+      "commands": [],
+      "runtime_targets": [],
+      "generated_output_dir": "unknown",
+      "license_signal": "unknown",
+      "inspection_status": "candidate_unverified",
+      "integration_strategy": "reference_only",
+      "notes": [
+        "名称命中，但未拿到足够文件证据",
+        "保留为候选，不放入首批已核验清单"
+      ],
+      "evidence": [
+        "https://github.com/yian0625/girlfriend-skill"
+      ]
+    }
+  ]
+}
