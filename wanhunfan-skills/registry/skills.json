@@ -1,6 +1,6 @@
 {
   "project": "wanhunfan-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "entries": [
     {
       "id": "therealxiaomanchu_ex_skill",
@@ -10,25 +10,13 @@
       "theme": "relationship",
       "object_type": "ex",
       "entry_file": "SKILL.md",
-      "commands": [
-        "/create-ex",
-        "/list-exes",
-        "/update-ex {slug}"
-      ],
-      "runtime_targets": [
-        "Claude Code",
-        "AgentSkills",
-        "OpenClaw-compatible pattern"
-      ],
+      "commands": ["/create-ex", "/list-exes", "/update-ex {slug}"],
+      "runtime_targets": ["Claude Code", "AgentSkills", "OpenClaw-compatible pattern"],
       "generated_output_dir": "exes/{slug}/",
       "license_signal": "MIT badge in README; LICENSE file present",
       "inspection_status": "inspected",
       "integration_strategy": "reference_only",
-      "notes": [
-        "双层结构：Relationship Memory + Persona",
-        "支持微信/QQ/社交媒体/照片/口述等输入",
-        "适合作为亲密关系类 skill 的代表条目"
-      ],
+      "notes": ["双层结构：Relationship Memory + Persona", "支持微信/QQ/社交媒体/照片/口述等输入"],
       "evidence": [
         "https://github.com/therealXiaomanChu/ex-skill/blob/54d0dceab6eeab55c68267aa4b9e0c68bd9e10a6/README.md",
         "https://github.com/therealXiaomanChu/ex-skill/blob/54d0dceab6eeab55c68267aa4b9e0c68bd9e10a6/SKILL.md"
@@ -42,25 +30,13 @@
       "theme": "relationship",
       "object_type": "ex",
       "entry_file": "SKILL.md",
-      "commands": [
-        "/create-ex",
-        "/list-exes",
-        "/update-ex {slug}"
-      ],
-      "runtime_targets": [
-        "Claude Code",
-        "AgentSkills",
-        "OpenClaw"
-      ],
+      "commands": ["/create-ex", "/list-exes", "/update-ex {slug}"],
+      "runtime_targets": ["Claude Code", "AgentSkills", "OpenClaw"],
       "generated_output_dir": "exes/{slug}/",
       "license_signal": "MIT badge in README",
       "inspection_status": "inspected",
       "integration_strategy": "reference_only",
-      "notes": [
-        "和另一份 ex-skill 高度同主题同骨架",
-        "强调 WeChat/iMessage/SMS/photos/social media 输入",
-        "适合在后续 similarity audit 中重点比对"
-      ],
+      "notes": ["和另一份 ex-skill 高度同主题同骨架", "强调 WeChat/iMessage/SMS/photos/social media 输入"],
       "evidence": [
         "https://github.com/perkfly/ex-skill/blob/c5ece53ab66948c6ea53e0df51c60a6ca0e96ea8/README.md",
         "https://github.com/perkfly/ex-skill/blob/c5ece53ab66948c6ea53e0df51c60a6ca0e96ea8/SKILL.md"
@@ -74,25 +50,13 @@
       "theme": "self",
       "object_type": "self",
       "entry_file": "SKILL.md",
-      "commands": [
-        "/create-yourself",
-        "/list-selves",
-        "/update-yourself {slug}"
-      ],
-      "runtime_targets": [
-        "Claude Code",
-        "AgentSkills",
-        "OpenClaw-compatible pattern"
-      ],
+      "commands": ["/create-yourself", "/list-selves", "/update-yourself {slug}"],
+      "runtime_targets": ["Claude Code", "AgentSkills", "OpenClaw-compatible pattern"],
       "generated_output_dir": ".claude/skills/{slug}/",
       "license_signal": "MIT badge in README",
       "inspection_status": "inspected",
       "integration_strategy": "reference_only",
-      "notes": [
-        "双层结构：Self Memory + Persona",
-        "对象域从他人切换成自我镜像",
-        "路径设计更偏直接让 Claude Code 识别的本地安装模式"
-      ],
+      "notes": ["双层结构：Self Memory + Persona", "对象域从他人切换成自我镜像"],
       "evidence": [
         "https://github.com/notdog1998/yourself-skill/blob/9deb1a87b1231fec85cadf2ef690fa49fef519ca/README.md",
         "https://github.com/notdog1998/yourself-skill/blob/9deb1a87b1231fec85cadf2ef690fa49fef519ca/SKILL.md"
@@ -106,27 +70,53 @@
       "theme": "workplace",
       "object_type": "colleague",
       "entry_file": "SKILL.md",
-      "commands": [
-        "/create-colleague",
-        "/list-colleagues",
-        "/colleague-rollback {slug} {version}"
-      ],
-      "runtime_targets": [
-        "Claude Code",
-        "AgentSkills",
-        "OpenClaw"
-      ],
+      "commands": ["/create-colleague", "/list-colleagues", "/colleague-rollback {slug} {version}"],
+      "runtime_targets": ["Claude Code", "AgentSkills", "OpenClaw"],
       "generated_output_dir": "colleagues/{slug}/",
       "license_signal": "MIT badge in README",
       "inspection_status": "inspected",
       "integration_strategy": "reference_only",
-      "notes": [
-        "Work Skill + Persona 双层架构",
-        "对象域为职场同事/搭档/导师离场后的经验萃取",
-        "可视作这一类仓库的重要源头之一"
-      ],
+      "notes": ["Work Skill + Persona 双层架构", "可视作该类仓库的重要源头之一"],
+      "evidence": ["https://github.com/titanwings/colleague-skill/blob/03f5da54390af25c2ef87ef9fd79a1621691f0c6/README.md"]
+    },
+    {
+      "id": "xiaoheizi8_parents_skills",
+      "title": "父母.skill",
+      "repo_full_name": "xiaoheizi8/parents-skills",
+      "repo_url": "https://github.com/xiaoheizi8/parents-skills",
+      "theme": "family",
+      "object_type": "parents",
+      "entry_file": "SKILL.md",
+      "commands": ["/create-parents", "/create-mom", "/create-dad", "/list-parents"],
+      "runtime_targets": ["Claude Code", "AgentSkills-compatible pattern"],
+      "generated_output_dir": "parents/{slug}/",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": ["Parent Memory + Persona，明确承接对象蒸馏谱系", "支持聊天记录/照片/语音/口述，主题转向亲子关系"],
       "evidence": [
-        "https://github.com/titanwings/colleague-skill/blob/03f5da54390af25c2ef87ef9fd79a1621691f0c6/README.md"
+        "https://github.com/xiaoheizi8/parents-skills/blob/main/README.md",
+        "https://github.com/xiaoheizi8/parents-skills/blob/main/SKILL.md"
+      ]
+    },
+    {
+      "id": "isecream9_parents_skill",
+      "title": "父母.skill",
+      "repo_full_name": "isecream9/parents-skill",
+      "repo_url": "https://github.com/isecream9/parents-skill",
+      "theme": "family",
+      "object_type": "parents",
+      "entry_file": "SKILL.md",
+      "commands": ["/parents-skill 妈妈", "/parents-skill 爸爸"],
+      "runtime_targets": ["Claude Code", "AgentSkills", "OpenClaw"],
+      "generated_output_dir": ".claude/skills/{slug}/",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": ["数字纪念取向的 Memory + Persona 双层结构", "README 明确把自己定位为该系列第四棒"],
+      "evidence": [
+        "https://github.com/isecream9/parents-skill/blob/master/README.md",
+        "https://github.com/isecream9/parents-skill/blob/master/SKILL.md"
       ]
     },
     {
@@ -143,13 +133,8 @@
       "license_signal": "unknown",
       "inspection_status": "candidate_unverified",
       "integration_strategy": "reference_only",
-      "notes": [
-        "名称命中，但未拿到足够文件证据",
-        "保留为候选，不放入首批已核验清单"
-      ],
-      "evidence": [
-        "https://github.com/LeoYeAI/teammate-skill"
-      ]
+      "notes": ["名称命中，但未拿到足够文件证据"],
+      "evidence": ["https://github.com/LeoYeAI/teammate-skill"]
     },
     {
       "id": "echovic_boss_skill",
@@ -165,13 +150,8 @@
       "license_signal": "unknown",
       "inspection_status": "candidate_unverified",
       "integration_strategy": "reference_only",
-      "notes": [
-        "名称命中，但未拿到足够文件证据",
-        "保留为候选，不放入首批已核验清单"
-      ],
-      "evidence": [
-        "https://github.com/echoVic/boss-skill"
-      ]
+      "notes": ["名称命中，但未拿到足够文件证据"],
+      "evidence": ["https://github.com/echoVic/boss-skill"]
     },
     {
       "id": "nicepkg_boss_skill",
@@ -187,13 +167,8 @@
       "license_signal": "README_EN 命中，但未完成结构核验",
       "inspection_status": "candidate_unverified",
       "integration_strategy": "reference_only",
-      "notes": [
-        "至少存在 README_EN 线索，但未完成人工核验",
-        "保留为候选，不放入首批已核验清单"
-      ],
-      "evidence": [
-        "https://github.com/nicepkg/boss-skill"
-      ]
+      "notes": ["至少存在 README_EN 线索，但未完成人工核验"],
+      "evidence": ["https://github.com/nicepkg/boss-skill"]
     },
     {
       "id": "yian0625_girlfriend_skill",
@@ -209,13 +184,59 @@
       "license_signal": "unknown",
       "inspection_status": "candidate_unverified",
       "integration_strategy": "reference_only",
-      "notes": [
-        "名称命中，但未拿到足够文件证据",
-        "保留为候选，不放入首批已核验清单"
-      ],
-      "evidence": [
-        "https://github.com/yian0625/girlfriend-skill"
-      ]
+      "notes": ["名称命中，但未拿到足够文件证据"],
+      "evidence": ["https://github.com/yian0625/girlfriend-skill"]
+    },
+    {
+      "id": "ren644_daoshi_skill",
+      "title": "daoshi-skill",
+      "repo_full_name": "ren644/daoshi-skill",
+      "repo_url": "https://github.com/ren644/daoshi-skill",
+      "theme": "workplace",
+      "object_type": "mentor",
+      "entry_file": "unknown",
+      "commands": [],
+      "runtime_targets": [],
+      "generated_output_dir": "unknown",
+      "license_signal": "unknown",
+      "inspection_status": "candidate_unverified",
+      "integration_strategy": "reference_only",
+      "notes": ["导师命名命中，但仓库内容证据不足"],
+      "evidence": ["https://github.com/ren644/daoshi-skill"]
+    },
+    {
+      "id": "2002pan_cyber_mentor_skills",
+      "title": "Cyber-Mentor-Skills",
+      "repo_full_name": "2002-Pan/Cyber-Mentor-Skills",
+      "repo_url": "https://github.com/2002-Pan/Cyber-Mentor-Skills",
+      "theme": "workplace",
+      "object_type": "mentor",
+      "entry_file": "unknown",
+      "commands": [],
+      "runtime_targets": [],
+      "generated_output_dir": "unknown",
+      "license_signal": "unknown",
+      "inspection_status": "candidate_unverified",
+      "integration_strategy": "reference_only",
+      "notes": ["mentor 命名命中，但未取得足够结构证据"],
+      "evidence": ["https://github.com/2002-Pan/Cyber-Mentor-Skills"]
+    },
+    {
+      "id": "sellerbubble_paper_mentor_skill",
+      "title": "Paper Mentor Skill",
+      "repo_full_name": "sellerbubble/paper-mentor-skill",
+      "repo_url": "https://github.com/sellerbubble/paper-mentor-skill",
+      "theme": "education_tool",
+      "object_type": "mentor_tool",
+      "entry_file": "SKILL.md",
+      "commands": ["/paper-mentor <arxiv-url-or-id>"],
+      "runtime_targets": ["Claude Code"],
+      "generated_output_dir": "n/a",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "rejected",
+      "integration_strategy": "rejected",
+      "notes": ["这是论文学习 / 教学工具 skill，不属于把某个导师对象蒸馏成分身的同一家谱系"],
+      "evidence": ["https://github.com/sellerbubble/paper-mentor-skill/blob/main/README.md"]
     }
   ]
 }
