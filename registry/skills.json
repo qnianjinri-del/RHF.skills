@@ -1,6 +1,7 @@
 {
   "project": "wanhunfan-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
+  "updated_at": "2026-07-01",
   "entries": [
     {
       "id": "therealxiaomanchu_ex_skill",
@@ -10,29 +11,14 @@
       "theme": "relationship",
       "object_type": "ex",
       "entry_file": "SKILL.md",
-      "commands": [
-        "/create-ex",
-        "/list-exes",
-        "/update-ex {slug}"
-      ],
-      "runtime_targets": [
-        "Claude Code",
-        "AgentSkills",
-        "OpenClaw-compatible pattern"
-      ],
+      "commands": ["/create-ex", "/list-exes", "/update-ex {slug}"],
+      "runtime_targets": ["Claude Code", "AgentSkills", "OpenClaw-compatible pattern"],
       "generated_output_dir": "exes/{slug}/",
       "license_signal": "MIT badge in README; LICENSE file present",
       "inspection_status": "inspected",
       "integration_strategy": "reference_only",
-      "notes": [
-        "双层结构：Relationship Memory + Persona",
-        "支持微信/QQ/社交媒体/照片/口述等输入",
-        "适合作为亲密关系类 skill 的代表条目"
-      ],
-      "evidence": [
-        "https://github.com/therealXiaomanChu/ex-skill/blob/54d0dceab6eeab55c68267aa4b9e0c68bd9e10a6/README.md",
-        "https://github.com/therealXiaomanChu/ex-skill/blob/54d0dceab6eeab55c68267aa4b9e0c68bd9e10a6/SKILL.md"
-      ]
+      "notes": ["双层结构：Relationship Memory + Persona", "支持微信/QQ/社交媒体/照片/口述等输入", "适合作为亲密关系类 skill 的代表条目"],
+      "evidence": ["https://github.com/therealXiaomanChu/ex-skill/blob/54d0dceab6eeab55c68267aa4b9e0c68bd9e10a6/README.md", "https://github.com/therealXiaomanChu/ex-skill/blob/54d0dceab6eeab55c68267aa4b9e0c68bd9e10a6/SKILL.md"]
     },
     {
       "id": "perkfly_ex_skill",
@@ -42,29 +28,14 @@
       "theme": "relationship",
       "object_type": "ex",
       "entry_file": "SKILL.md",
-      "commands": [
-        "/create-ex",
-        "/list-exes",
-        "/update-ex {slug}"
-      ],
-      "runtime_targets": [
-        "Claude Code",
-        "AgentSkills",
-        "OpenClaw"
-      ],
+      "commands": ["/create-ex", "/list-exes", "/update-ex {slug}"],
+      "runtime_targets": ["Claude Code", "AgentSkills", "OpenClaw"],
       "generated_output_dir": "exes/{slug}/",
       "license_signal": "MIT badge in README",
       "inspection_status": "inspected",
       "integration_strategy": "reference_only",
-      "notes": [
-        "和另一份 ex-skill 高度同主题同骨架",
-        "强调 WeChat/iMessage/SMS/photos/social media 输入",
-        "适合在后续 similarity audit 中重点比对"
-      ],
-      "evidence": [
-        "https://github.com/perkfly/ex-skill/blob/c5ece53ab66948c6ea53e0df51c60a6ca0e96ea8/README.md",
-        "https://github.com/perkfly/ex-skill/blob/c5ece53ab66948c6ea53e0df51c60a6ca0e96ea8/SKILL.md"
-      ]
+      "notes": ["和另一份 ex-skill 高度同主题同骨架", "强调 WeChat/iMessage/SMS/photos/social media 输入", "适合在后续 similarity audit 中重点比对"],
+      "evidence": ["https://github.com/perkfly/ex-skill/blob/c5ece53ab66948c6ea53e0df51c60a6ca0e96ea8/README.md", "https://github.com/perkfly/ex-skill/blob/c5ece53ab66948c6ea53e0df51c60a6ca0e96ea8/SKILL.md"]
     },
     {
       "id": "notdog1998_yourself_skill",
@@ -74,29 +45,14 @@
       "theme": "self",
       "object_type": "self",
       "entry_file": "SKILL.md",
-      "commands": [
-        "/create-yourself",
-        "/list-selves",
-        "/update-yourself {slug}"
-      ],
-      "runtime_targets": [
-        "Claude Code",
-        "AgentSkills",
-        "OpenClaw-compatible pattern"
-      ],
+      "commands": ["/create-yourself", "/list-selves", "/update-yourself {slug}"],
+      "runtime_targets": ["Claude Code", "AgentSkills", "OpenClaw-compatible pattern"],
       "generated_output_dir": ".claude/skills/{slug}/",
       "license_signal": "MIT badge in README",
       "inspection_status": "inspected",
       "integration_strategy": "reference_only",
-      "notes": [
-        "双层结构：Self Memory + Persona",
-        "对象域从他人切换成自我镜像",
-        "路径设计更偏直接让 Claude Code 识别的本地安装模式"
-      ],
-      "evidence": [
-        "https://github.com/notdog1998/yourself-skill/blob/9deb1a87b1231fec85cadf2ef690fa49fef519ca/README.md",
-        "https://github.com/notdog1998/yourself-skill/blob/9deb1a87b1231fec85cadf2ef690fa49fef519ca/SKILL.md"
-      ]
+      "notes": ["双层结构：Self Memory + Persona", "对象域从他人切换成自我镜像", "路径设计更偏直接让 Claude Code 识别的本地安装模式"],
+      "evidence": ["https://github.com/notdog1998/yourself-skill/blob/9deb1a87b1231fec85cadf2ef690fa49fef519ca/README.md", "https://github.com/notdog1998/yourself-skill/blob/9deb1a87b1231fec85cadf2ef690fa49fef519ca/SKILL.md"]
     },
     {
       "id": "titanwings_colleague_skill",
@@ -106,28 +62,133 @@
       "theme": "workplace",
       "object_type": "colleague",
       "entry_file": "SKILL.md",
-      "commands": [
-        "/create-colleague",
-        "/list-colleagues",
-        "/colleague-rollback {slug} {version}"
-      ],
-      "runtime_targets": [
-        "Claude Code",
-        "AgentSkills",
-        "OpenClaw"
-      ],
+      "commands": ["/create-colleague", "/list-colleagues", "/colleague-rollback {slug} {version}"],
+      "runtime_targets": ["Claude Code", "AgentSkills", "OpenClaw"],
       "generated_output_dir": "colleagues/{slug}/",
       "license_signal": "MIT badge in README",
       "inspection_status": "inspected",
       "integration_strategy": "reference_only",
-      "notes": [
-        "Work Skill + Persona 双层架构",
-        "对象域为职场同事/搭档/导师离场后的经验萃取",
-        "可视作这一类仓库的重要源头之一"
-      ],
-      "evidence": [
-        "https://github.com/titanwings/colleague-skill/blob/03f5da54390af25c2ef87ef9fd79a1621691f0c6/README.md"
-      ]
+      "notes": ["Work Skill + Persona 双层架构", "对象域为职场同事/搭档/导师离场后的经验萃取", "可视作这一类仓库的重要源头之一"],
+      "evidence": ["https://github.com/titanwings/colleague-skill/blob/03f5da54390af25c2ef87ef9fd79a1621691f0c6/README.md"]
+    },
+    {
+      "id": "alchaincyf_nuwa_skill",
+      "title": "女娲.skill",
+      "repo_full_name": "alchaincyf/nuwa-skill",
+      "repo_url": "https://github.com/alchaincyf/nuwa-skill",
+      "theme": "skill_factory",
+      "object_type": "persona_generator",
+      "entry_file": "SKILL.md",
+      "commands": ["npx skills add alchaincyf/nuwa-skill"],
+      "runtime_targets": ["Claude Code", "Codex", "Cursor", "OpenClaw", "Hermes Agent", "CodeBuddy", "Workbuddy", "Gemini CLI", "OpenCode"],
+      "generated_output_dir": ".claude/skills/{generated-persona}/",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": ["从固定对象 skill 转向“输入人名/需求→自动蒸馏人物 skill”的上游生成器", "README 明确把 colleague-skill 作为谱系参照，并扩展到乔布斯、芒格、费曼、马斯克等公共人物", "SKILL.md 强调提炼 how they think，而不是复读 what they said"],
+      "evidence": ["https://github.com/alchaincyf/nuwa-skill/blob/main/README.md", "https://github.com/alchaincyf/nuwa-skill/blob/main/SKILL.md"]
+    },
+    {
+      "id": "alchaincyf_huashu_design",
+      "title": "花叔Design / Huashu Design",
+      "repo_full_name": "alchaincyf/huashu-design",
+      "repo_url": "https://github.com/alchaincyf/huashu-design",
+      "theme": "design_operator",
+      "object_type": "design_workflow",
+      "entry_file": "SKILL.md",
+      "commands": ["npx skills add alchaincyf/huashu-design"],
+      "runtime_targets": ["Claude Code", "Cursor", "Codex", "OpenClaw", "Hermes"],
+      "generated_output_dir": "unknown",
+      "license_signal": "MIT badge in README; README states commercial use is free since 2026-05-14",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": ["不是人物魂，但代表 skills 从 persona 蒸馏扩展到可交付视觉工作流", "README 主打 HTML 原型、动画、PPT、信息图等可交付设计产物", "SKILL.md 有明确触发词、事实验证规则、反 AI slop 设计流程"],
+      "evidence": ["https://github.com/alchaincyf/huashu-design/blob/main/README.md", "https://github.com/alchaincyf/huashu-design/blob/main/SKILL.md"]
+    },
+    {
+      "id": "alchaincyf_zhangxuefeng_skill",
+      "title": "张雪峰.skill",
+      "repo_full_name": "alchaincyf/zhangxuefeng-skill",
+      "repo_url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "theme": "public_figure",
+      "object_type": "education_adviser",
+      "entry_file": "SKILL.md",
+      "commands": ["npx skills add alchaincyf/zhangxuefeng-skill"],
+      "runtime_targets": ["Claude Code", "Codex", "Cursor", "OpenClaw", "Hermes Agent", "CodeBuddy", "Workbuddy", "Gemini CLI", "OpenCode"],
+      "generated_output_dir": "runtime skills directory",
+      "license_signal": "MIT badge in README; Agent Skills and skills.sh badges present",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": ["公共人物/教育咨询方向的代表条目，README 称其为“认知操作系统”而非语录合集", "SKILL.md 有完整 frontmatter、触发语、角色规则、WebSearch 研究流程和 fallback 树", "从关系/职场对象蒸馏扩展到公共人物思维框架蒸馏"],
+      "evidence": ["https://github.com/alchaincyf/zhangxuefeng-skill/blob/main/README.md", "https://github.com/alchaincyf/zhangxuefeng-skill/blob/main/SKILL.md"]
+    },
+    {
+      "id": "opendemon_zhang_xue_feng_skill",
+      "title": "张雪峰.skill",
+      "repo_full_name": "OpenDemon/zhang-xue-feng-skill",
+      "repo_url": "https://github.com/OpenDemon/zhang-xue-feng-skill",
+      "theme": "public_figure",
+      "object_type": "education_adviser",
+      "entry_file": "SKILL.md",
+      "commands": ["npx skills add OpenDemon/zhang-xue-feng-skill"],
+      "runtime_targets": ["skills-compatible runtime"],
+      "generated_output_dir": "unknown",
+      "license_signal": "unknown",
+      "inspection_status": "candidate_unverified",
+      "integration_strategy": "reference_only",
+      "notes": ["同一公共人物主题的轻量实现，README 和 SKILL.md 均可见", "内容强调实用主义、信息差、现实主义三类心智模型", "许可证与谱系来源尚未核验，先进入候选区"],
+      "evidence": ["https://github.com/OpenDemon/zhang-xue-feng-skill", "https://github.com/OpenDemon/zhang-xue-feng-skill/blob/master/README.md", "https://github.com/OpenDemon/zhang-xue-feng-skill/blob/master/SKILL.md"]
+    },
+    {
+      "id": "a18515373115_droid_zhangxuefeng_skill",
+      "title": "张雪峰.skill v2.0",
+      "repo_full_name": "a18515373115-droid/ZhangXueFeng-skill",
+      "repo_url": "https://github.com/a18515373115-droid/ZhangXueFeng-skill",
+      "theme": "public_figure",
+      "object_type": "education_adviser",
+      "entry_file": "SKILL.md",
+      "commands": [],
+      "runtime_targets": ["skills-compatible runtime"],
+      "generated_output_dir": "unknown",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "candidate_unverified",
+      "integration_strategy": "reference_only",
+      "notes": ["张雪峰主题的 v2.0 分支，README 强调表达引擎、来源标注和情绪危机处理", "SKILL.md frontmatter 含 version/changelog 且 name 使用中文，需后续核验是否符合不同 runtime 的标准", "适合作为同主题迭代/换皮/强化表达规则的审计样本"],
+      "evidence": ["https://github.com/a18515373115-droid/ZhangXueFeng-skill", "https://github.com/a18515373115-droid/ZhangXueFeng-skill/blob/main/README.md", "https://github.com/a18515373115-droid/ZhangXueFeng-skill/blob/main/SKILL.md"]
+    },
+    {
+      "id": "wangjunqing_coder_huasheng13_skill",
+      "title": "公考花生十三.skill",
+      "repo_full_name": "WangJunqing-coder/huasheng13-skill",
+      "repo_url": "https://github.com/WangJunqing-coder/huasheng13-skill",
+      "theme": "exam_prep",
+      "object_type": "gongkao_coach",
+      "entry_file": "SKILL.md",
+      "commands": [],
+      "runtime_targets": ["Hermes Skill", "skills-compatible runtime"],
+      "generated_output_dir": "unknown",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "inspected",
+      "integration_strategy": "reference_only",
+      "notes": ["公考/行测/申论方向的热门人物方法论 skill", "README 覆盖资料分析、数量关系、言语理解、判断推理、常识判断、申论等模块", "SKILL.md 有完整触发词、单题讲解、模块方法论、套题复盘、备考规划流程"],
+      "evidence": ["https://github.com/WangJunqing-coder/huasheng13-skill/blob/master/README.md", "https://github.com/WangJunqing-coder/huasheng13-skill/blob/master/SKILL.md"]
+    },
+    {
+      "id": "wsjackys_huasheng13_skill",
+      "title": "公考花生十三.skill",
+      "repo_full_name": "wsjackys/huasheng13-skill",
+      "repo_url": "https://github.com/wsjackys/huasheng13-skill",
+      "theme": "exam_prep",
+      "object_type": "gongkao_coach",
+      "entry_file": "SKILL.md",
+      "commands": [],
+      "runtime_targets": ["Hermes Skill", "skills-compatible runtime"],
+      "generated_output_dir": "unknown",
+      "license_signal": "MIT badge in README",
+      "inspection_status": "duplicate_cluster",
+      "integration_strategy": "reference_only",
+      "notes": ["与 WangJunqing-coder/huasheng13-skill 的 README blob sha 一致，疑似同源复制/分身", "先作为 duplicate_cluster 挂幡，后续做相似度审计再定性", "体现花生十三 skill 已经从单仓扩散成小簇"],
+      "evidence": ["https://github.com/wsjackys/huasheng13-skill", "https://github.com/wsjackys/huasheng13-skill/blob/master/README.md"]
     },
     {
       "id": "leoyeai_teammate_skill",
@@ -143,13 +204,8 @@
       "license_signal": "unknown",
       "inspection_status": "candidate_unverified",
       "integration_strategy": "reference_only",
-      "notes": [
-        "名称命中，但未拿到足够文件证据",
-        "保留为候选，不放入首批已核验清单"
-      ],
-      "evidence": [
-        "https://github.com/LeoYeAI/teammate-skill"
-      ]
+      "notes": ["名称命中，但未拿到足够文件证据", "保留为候选，不放入首批已核验清单"],
+      "evidence": ["https://github.com/LeoYeAI/teammate-skill"]
     },
     {
       "id": "echovic_boss_skill",
@@ -165,13 +221,8 @@
       "license_signal": "unknown",
       "inspection_status": "candidate_unverified",
       "integration_strategy": "reference_only",
-      "notes": [
-        "名称命中，但未拿到足够文件证据",
-        "保留为候选，不放入首批已核验清单"
-      ],
-      "evidence": [
-        "https://github.com/echoVic/boss-skill"
-      ]
+      "notes": ["名称命中，但未拿到足够文件证据", "保留为候选，不放入首批已核验清单"],
+      "evidence": ["https://github.com/echoVic/boss-skill"]
     },
     {
       "id": "nicepkg_boss_skill",
@@ -187,13 +238,8 @@
       "license_signal": "README_EN 命中，但未完成结构核验",
       "inspection_status": "candidate_unverified",
       "integration_strategy": "reference_only",
-      "notes": [
-        "至少存在 README_EN 线索，但未完成人工核验",
-        "保留为候选，不放入首批已核验清单"
-      ],
-      "evidence": [
-        "https://github.com/nicepkg/boss-skill"
-      ]
+      "notes": ["至少存在 README_EN 线索，但未完成人工核验", "保留为候选，不放入首批已核验清单"],
+      "evidence": ["https://github.com/nicepkg/boss-skill"]
     },
     {
       "id": "yian0625_girlfriend_skill",
@@ -209,13 +255,8 @@
       "license_signal": "unknown",
       "inspection_status": "candidate_unverified",
       "integration_strategy": "reference_only",
-      "notes": [
-        "名称命中，但未拿到足够文件证据",
-        "保留为候选，不放入首批已核验清单"
-      ],
-      "evidence": [
-        "https://github.com/yian0625/girlfriend-skill"
-      ]
+      "notes": ["名称命中，但未拿到足够文件证据", "保留为候选，不放入首批已核验清单"],
+      "evidence": ["https://github.com/yian0625/girlfriend-skill"]
     }
   ]
 }
